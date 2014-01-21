@@ -1,0 +1,38 @@
+
+//-	Mixins START
+
+include menu.jade
+
+
+
+//- Mixins END
+
+doctype 5
+html
+	head
+		title tagBin
+		link(rel='stylesheet', type='text/css', href='./static/css/vendors-bundled.css')
+		script(type='text/javascript', src='./static/js/vendors-bundled.js')
+
+		link(rel='stylesheet', type='text/css', href='./static/css/style.css')
+
+	body
+		//- Initialize FB SDK
+		#fb-root
+		
+		.frontlayer
+			block menu
+			.content
+				block content
+
+		.backlayer
+			block background
+
+		.overlay
+			block overlay
+
+		.hide
+			block view
+
+	script(type='text/javascript', src='./static/js/tagbin.js')
+	script(type='text/javascript', src='./static/js/main.js')

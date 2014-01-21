@@ -1,0 +1,128 @@
+.loading
+	fixed top left
+	bottom 0
+	right 0
+	z-index 1310
+	background-color #FFF
+	height 100%
+	width 100%
+	.tb-loader
+		absolute top left
+		bottom 0
+		right 0
+		z-index 1308
+		padding-top 80px
+		text-align center
+		i
+			display block
+			font-size 300px
+			color transparent
+			background-clip text
+			background-color _purple
+		i.anim
+			animation _loading 1s ease-out infinite
+	canvas.ldcanvas, canvas.sea-of-tweets
+		absolute top left 
+		bottom 0
+		right 0px
+		left  0px
+		z-index 1305
+		display block
+		//animation canvasanim 3s linear infinite
+	.k-contain
+		absolute top left
+		bottom 0
+		right 0
+		z-index 1306
+		display block
+		opacity 1
+	ul.loader-menu
+		position relative
+		z-index 1309
+		text-align center
+		list-style none
+		height auto
+		margin 15% 0 0 0
+		box-sizing border-box
+		width 100%
+		li
+			display inline-block
+			margin-right 30px
+			a.btn-hex
+				display block
+				background-color _purple
+				border 1px _purple solid
+				border-radius 100px
+				width 100px
+				height 100px
+				padding 36px 36px
+				position relative
+				transition all .3s ease
+				i
+					display block
+					color #FFF
+					font-size 80px
+					margin-top 8px
+				.title
+					padding 13px 12px
+					text-align center
+					width 100%
+					font-size 24px 
+					color #FFF
+					border-radius 2px
+					background-color inherit
+					position absolute
+					top -70px
+					left -6px
+					height 30px
+					opacity 0
+					transition all .4s ease-in-out
+					&:after
+						position absolute
+						bottom -44px
+						background-color inherit
+						width 4px
+						left 50%
+						margin-left -10px
+						height 0
+						content ''
+						transition all .3s ease-in-out
+				&:hover, &:active
+					text-decoration none
+				&:hover
+					position relative
+					top -20px
+					.title
+						top -100px
+						opacity 1
+						&:after
+							height 49px
+				&:active
+					box-shadow 0px 0px 10px 1px rgba(0,0,0,0.25)
+			a.btn-hex.green
+				background-color _green
+				border-color _green
+			a.btn-hex.blue
+				background-color _blue
+				border-color _blue
+			a.btn-hex.purple
+				background-color _purple
+				border-color _purple
+			a.btn-hex.yellow
+				background-color _yellow
+				border-color _yellow
+			a.btn-hex.red
+				background-color _red
+				border-color _red
+
+@keyframes canvasanim{
+	0%{
+		left -1000px
+	}
+	50%{
+		left 0px
+	}
+	100%{
+		left -1000px
+	}
+}

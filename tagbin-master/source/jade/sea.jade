@@ -1,0 +1,44 @@
+extends layout
+
+block menu 
+	mixin _menu('normal')
+
+
+block overlay
+	.sea-of-tweets
+		canvas#sea-canvas
+
+
+block content
+
+	.row-fluid
+		.span3
+			.row-fluid.box.main
+				.title.tb.purple
+					i.icomoon-tagbin
+					h3 tagBin
+				.body
+					dl.dl-horizontal
+						dt Status: 
+						dd OK
+				.footer
+			.row-fluid.box
+				.title.green
+					i.icomoon-lightning
+					h3 Actions
+				ul.actionlist.unstyled
+					li.action.done
+						i.icomoon-minus
+						span.name Access Machine
+					li.action.waiting
+						i.icomoon-minus
+						span.name Capture Pic
+					li.action
+						i.icomoon-minus
+						span.name Upload
+		.span9
+			.row-fluid.app-content
+				.row-fluid.box.app
+					.title.yellow
+						i.icomoon-stats
+						h3 Stats

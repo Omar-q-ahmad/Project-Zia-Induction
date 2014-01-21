@@ -1,0 +1,30 @@
+{
+  "name": "tagBin",
+  "description": "tagBin- Social Electronic Solutions",
+  "version": "0.1",
+  "app": {
+    "background": {
+      "scripts": ["./static/js/background.js","./static/js/vendors-bundled.js", "./static/js/tagbin.js", "./static/js/main.js"]
+    }
+  },
+  "icons": { 
+  	"16": "./static/img/logo-16.png", 
+  	"128": "./static/img/logo-128.png",
+  	"256": "./static/img/logo-256.png"
+  },
+  "permissions": [
+      "http://*.facebook.com/", 
+      "http://connect.facebook.net/",
+      "http://graph.facebook.com/",
+      "http://*.tagbin.in/", 
+      "notifications",
+      "videoCapture", 
+      "serial",
+      "fullscreen", 
+      "audioCapture",
+      "usb",
+      "webview",
+      "http://*/*",
+      "https://*/*"
+  ]
+}

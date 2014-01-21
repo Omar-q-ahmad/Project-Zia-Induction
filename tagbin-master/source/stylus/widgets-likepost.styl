@@ -1,0 +1,143 @@
+.post-container
+	border-top 1px #ccc solid
+	box-sizing border-box
+	padding 20px
+	.userImage
+		img
+			height 150px
+			width 150px
+			background-color _purple
+	.post-content
+		margin-top 5px
+		.post-text
+			font-family baseFontThin
+			font-size 38px
+			line-height 50px
+		.who-posted
+			display block
+			color _purple
+			font-family baseFontLight
+			font-size 22px
+			margin-bottom 5px
+		.post-likes
+			margin-top 15px
+			.count
+				font-size 30px
+				font-family baseFont
+			.text
+				font-size 16px
+
+	.post-content#latestpost-share
+		.who-posted
+			color #444
+		.post-text
+			p
+				color #222
+		.post-likes
+			.count
+				color #444
+			
+
+.posts-list
+	position relative
+	width 100%
+	height 100%
+	//background-color rgb(215,215,215)
+	//box-shadow inset 0px 0px 10px 0px rgba(0,0,0,0.2)
+	box-sizing border-box
+	padding 10px 30px
+	perspective 600
+	perspective-origin center center
+	overflow hidden
+
+	.social-post
+		opacity 0.45
+		padding 20px
+		height auto
+		background-color #FFF
+		border-radius 4px
+		margin-top 5px
+		border 1px #ddd solid
+		box-sizing border-box
+		box-shadow 0px 0px 7px 0px rgba(0,0,0,0.1)
+		transform scale(0.8) rotateX(25deg)
+		transition all .3s ease-in-out
+		.pic-whoposted
+			height 150px
+			width 150px
+			background-color _purple
+			background-repeat no-repeat
+			background-size cover
+			background-position center top
+			border-radius 2px
+			border 1px #ccc solid
+			box-shadow inset 0px 0px 7px 1px rgba(0,0,0,0.25)
+		.who-posted
+			font-size 28px
+			color _purple
+			font-family baseFontLight
+		.post-text
+			margin-top 15px
+			margin-bottom 20px
+			font-size 28px
+			font-family baseFontThin
+			line-height 40px
+			i
+				font-size 20px
+				margin-left 5px
+				margin-right 5px
+		.post-likes
+			clearfix()
+			.count 
+				float left
+				color #555
+				font-family baseFont
+				width auto
+				font-size 22px
+				i.purple
+					color _purple
+			.text
+				float left
+				margin-left 20px
+		ul.like-users
+			margin 15px 0px 0px 0px
+			list-style none
+			display block
+			clear both
+			li 
+				display inline-block
+				height 50px
+				width 50px 
+				margin-right 10px
+				border-radius 4px
+				border 1px #ddd solid
+				box-shadow inset 0px 0px 5px 1px rgba(0,0,0,0.3)
+				background-repeat no-repeat
+				background-size cover
+				background-position center center 
+
+
+
+	.social-post.active
+		opacity 1
+		transform scale(1.0) rotateX(0deg)
+		position relative
+		z-index 400
+	.social-post.hidden
+		display block
+		visibility visible
+		transform scale(0.8) rotateX(25deg)
+		position relative 
+		z-index 300
+	.social-post.hidden.tiltup
+		transform scale(0.8) rotateX(25deg)
+	.social-post.hidden.tiltdown
+		transform scale(0.8) rotateX(-25deg)
+	.social-post.active + .social-post
+		position relative
+		transform scale(0.8) rotateX(-25deg)
+	.social-post
+		&:first-child
+			margin-top 400px
+		&:last-child
+			margin-bottom 400px

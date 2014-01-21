@@ -1,0 +1,45 @@
+body 
+	background-color _baseback
+	color _fontcolor
+
+
+h1, h2, h3, h4, h5, h6
+	font-weight normal
+h1, h2 
+	font-family baseFontThin
+h3, h4 
+	font-family baseFontLight
+h5, h6
+	font-family baseFontSemibold
+
+
+.inline-box
+	i
+		display inline-block
+		margin-right 8px
+	span 
+		display inline-block
+		color #AAA
+
+
+.tcenter
+	text-align center
+
+
+// Scrollbar Overrides
+::-webkit-scrollbar{
+	width 10px
+	height 10px
+}
+::-webkit-scrollbar-track{
+	background-color rgba(0,0,0,0.1)
+}
+::-webkit-scrollbar-track:hover{
+	background-color rgba(0,0,0,0.2)
+}
+::-webkit-scrollbar-thumb{
+	background-color rgba(0,0,0,0.1)
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color rgba(0,0,0,0.2)
+}

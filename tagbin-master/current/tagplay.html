@@ -1,0 +1,32 @@
+
+<div class="row-fluid box app">
+  <div class="play-wrap">
+    <div class="player-container">
+      <div class="player"><img class="player-art"/>
+        <div class="seekbar">
+          <input type="range" min="0" max="100" class="play-seek"/>
+        </div>
+        <ul class="player-info">
+          <li class="title">Song Title</li>
+          <li class="album">Album</li>
+          <li class="artist">Artist</li>
+        </ul>
+        <ul class="player-controls">
+          <li class="btn prev"><i class="entypo-previous"></i></li>
+          <li class="btn play"><i class="entypo-play"></i></li>
+          <li class="btn next"><i class="entypo-next"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div id="playlist-cont" class="play-list">
+      <div class="head">
+        <div class="title">Playlist</div>
+        <div class="options">
+          <button class="btn">Up</button>
+          <button class="btn">Down</button>
+        </div>
+      </div>
+      <ul data-action="populateMP3" data-target="#playlist-cont" class="unstyled loadActions"></ul>
+    </div>
+  </div>
+</div>

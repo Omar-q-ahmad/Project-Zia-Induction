@@ -1,0 +1,16 @@
+node_modules/
+current.crx
+current.pem
+current/facebook-php-sdk/
+./current/access.log
+./current/error.log
+builds/
+tmp/
+*.crx
+*.pem
+*.log
+tagbin.sublime-workspace
+
+# Don't monitor mp3 files
+*.mp3
+current/music/*

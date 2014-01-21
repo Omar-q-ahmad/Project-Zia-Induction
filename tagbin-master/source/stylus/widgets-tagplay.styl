@@ -1,0 +1,134 @@
+.play-wrap
+	box-sizing border-box
+	margin 0
+	padding 0
+	width 100%
+	height auto
+
+	.player-container
+		width 60%
+		display block
+		float left
+		height auto
+		box-sizing border-box
+
+.play-list
+	display block
+	float left
+	width 40%
+	height auto
+	box-sizing border-box
+	border 1px #DDD solid
+	box-shadow 0px 0px 8px 0px rgba(0,0,0,0.1)
+	.head
+		height 60px 
+		border-bottom 1px #ddd solid
+		background linear-gradient(top, rgb(250,250,250), rgb(243,243,243))
+		border-radius 3px 3px 0px 0px
+		box-sizing border-box
+		padding 8px 20px
+		.title, .options
+			display block
+		.title 
+			margin-top 11px
+			float left 
+			font-size 15px
+			text-transform uppercase 
+			text-shadow 0px 1px 0px #FFF 
+			color #c4c4c4
+		.options
+			float right 
+			.btn 
+				margin-top 4px 
+				padding 5px 10px 
+				font-size 14px
+				border-color #ccc
+				background none
+				background-color #ddd
+	ul
+		margin 0
+		list-style none
+		overflow hidden
+		height 582px
+		overflow-y scroll
+		li 
+			display block
+			padding 16px 10px 16px 30px
+			font-size 16px
+			font-family baseFontLight
+			border-bottom 1px #EEE solid
+			position relative
+			cursor pointer
+			&:after
+				position absolute
+				content ''
+				height 12px
+				width 12px 
+				border-radius 16px
+				border 1px #CCC solid
+				box-shadow inset 0px -2px 7px 0px rgba(0,0,0,0.1)
+				top 18px 
+				left 8px
+				background-color #FFF
+		li:hover
+			&:after
+				background-color _yellow
+		li:active, li.active
+			&:after
+				background-color _blue
+
+
+
+.player-container
+	padding 0px 40px 40px 40px
+	.player
+		clearfix()
+	.player-art
+		display block
+		width 100%
+		height 500px 
+		background-color _blue
+	.player-info
+		display block 
+		margin-top 20px
+		font-family baseFontLight 
+		font-size 16px 
+		text-align center 
+
+ul.player-info, ul.player-controls
+	display block
+	margin 0
+	list-style none
+
+ul.player-info 
+	li 
+		display block
+
+.player
+	.seekbar 
+		margin-top 40px
+		display none
+	input[type='range']
+		appearance(none)
+		background-color rgba(_blue, 0.4)
+		width 100%
+		height 2px
+		display block 
+	input[type='range']::-webkit-slider-thumb
+			-webkit-appearance none
+			width 10px 
+			cursor pointer
+			height 10px 
+			background-color rgba(_blue, 1)
+			border-radius 100px
+			position relative
+			box-shadow 0px 0px 10px 0px rgba(_blue, 0.3)
+			&:after	
+				position absolute
+				top -6px 
+				left -6px
+				content ''
+				width 20px 
+				height 20px 
+				border 1px rgba(_blue, 0.8) solid 
+				border-radius 20px

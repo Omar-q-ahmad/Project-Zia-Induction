@@ -1,0 +1,14 @@
+.row-fluid.box.app
+	.title.green
+		i.icomoon-camera
+		h3 Pic Upload
+		button.btn.purple.runAction(data-action='takePicture', data-target='#camera-vw') Capture
+	
+	
+	.body 
+		.row-fluid.loadActions(data-action='initCamera', data-target='#camera-vw')
+			.videoWrap
+				video#camera-vw
+				.countdown
+
+

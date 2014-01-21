@@ -1,0 +1,106 @@
+.menu
+	background-color #DDD
+	absolute top left
+	width auto
+	bottom 0
+	height 100%
+	z-index 1100
+	box-shadow inset 0px -4px 5px 0px rgba(0,0,0,0.3)
+	ul
+		margin 0
+		list-style none
+		li
+			cursor pointer
+			position relative
+			width 70px
+			height 70px
+			box-sizing border-box
+			padding 15px
+			text-align center
+			z-index 600
+			box-shadow inset -2px 0px 3px 0px rgba(0,0,0,0.2)
+			&:nth-child(1n)
+				background-color _purple
+			&:nth-child(2n)
+				background-color _green
+			&:nth-child(3n)
+				background-color _red
+			&:nth-child(4n)
+				background-color _blue
+			&:nth-child(5n)
+				background-color _orange
+			&:nth-child(6n)
+				background-color _pink
+			&:nth-child(7n)
+				background-color _yellow
+			.expander
+				color #FFF
+				font-family baseFont
+				font-size 20px
+				position absolute
+				top 0
+				left 70px
+				display none
+				width 0
+				height 0
+				opacity 0
+				z-index 800
+				background-color inherit
+				box-sizing border-box
+				padding 15px
+				text-align right
+			.condensed
+				display block
+				i
+					color rgba(0,0,0,0.25)
+					font-size 32px
+					margin-top 5px
+					display block
+					margin-left -4px
+
+			&:hover
+				.expander
+					opacity 1
+					min-height 70px
+					height auto
+					//min-width 184px
+					min-width 40px
+					width auto
+					display block
+					box-shadow 2px 0px 8px 1px rgba(0,0,0,0.2)
+					font-size 30px
+					font-family baseFontLight
+					padding-top 24px
+					white-space nowrap
+					padding-left 20px
+					padding-right 20px
+					text-shadow 0px 1px 1px rgba(0,0,0,0.1)
+					border-radius 0px 4px 4px 0px
+				.condensed
+					i
+						color #FFF
+						text-shadow 0px 1px 0px rgba(0,0,0,0.25)
+
+			&:active
+				background-color rgba(0,0,0,0.1)
+
+
+.tb-logo
+	background-image url('../img/logo.png')
+	background-size cover
+	height 100px
+	width 100px
+	margin 10px 36px
+
+.tagBinMain
+	padding 10px
+	font-size 72px
+	margin-top 10px
+	margin-bottom 10px
+	transition all .3s ease-in-out
+	cursor pointer
+	color #aaa
+	&:hover
+		color _purple
+	&:active
+		color _red

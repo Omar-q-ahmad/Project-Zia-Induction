@@ -1,0 +1,31 @@
+.btn
+	border-radius(2px)
+	background none
+	background-color _purple
+	box-shadow none
+	border none
+	text-shadow none
+	padding 8px 20px
+	font-size 16px
+	font-family baseFontSemibold
+	color #EEE
+	border 1px darken(_purple, 18%) solid
+	&:hover
+		color #FFF
+		background none
+		background-color lighten(_purple, 8%)
+	&:active
+		color #FFF
+		background none
+		background-color darken(_purple, 8%)
+
+.btn.yellow
+	background-color _yellow
+	color #666
+	border-color darken(_yellow, 8%)
+	&:hover
+		background-color lighten(_yellow, 5%)
+		color #444
+	&:active
+		background-color darken(_yellow, 5%)
+		color #444

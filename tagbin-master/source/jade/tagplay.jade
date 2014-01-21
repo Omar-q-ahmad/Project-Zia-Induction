@@ -1,0 +1,29 @@
+.row-fluid.box.app
+	.play-wrap
+		.player-container
+			.player
+				img.player-art
+				.seekbar
+					input.play-seek(type='range', min='0', max='100')
+				ul.player-info
+					li.title Song Title
+					li.album Album
+					li.artist Artist
+				ul.player-controls
+					li.btn.prev
+						i.entypo-previous
+					li.btn.play
+						i.entypo-play
+					li.btn.next
+						i.entypo-next
+
+		.play-list#playlist-cont
+			.head
+				.title Playlist
+				.options
+					button.btn Up
+					button.btn Down
+			ul.unstyled.loadActions(data-action='populateMP3', data-target='#playlist-cont')
+
+
+			

@@ -1,0 +1,72 @@
+{
+
+ 	"styles": {
+ 		
+ 		"themes": ["light", "dark"],
+
+ 		"colors": ["@baseRed", "@baseBlue", "@baseGreen", "@basePurple", "@basePink", "@baseYellow"]
+ 	},
+
+ 	"schemes": {
+ 		"@baseBlue": "#33B5E5",
+		"@baseGreen": "#33DC49",
+		"@baseRed": "#FF4444",
+		"@basePink": "#ED3BA6",
+		"@basePurple": "#AA66CC",
+		"@baseOrange": "#FFBB33",
+		"@baseYellow": "#f4b300",
+		"@baseBlack": "#343434"
+ 	},
+
+ 	"coffee":[
+ 				"main.coffee",
+ 				"tagbin.coffee",
+ 				"tagbin-actions.coffee"
+ 			],
+
+ 	"css":  [
+ 				"jquery-ui-1.10.2.custom.css",
+				"bootstrap.min.css",
+				"bootstrap-responsive.min.css",
+				"font-awesome.min.css",
+				"fonts.css",
+				"font-icomoon.css",
+				"font-entypo.css",
+				"font-tagbin.css",
+				"prettify.css"
+ 			],
+
+ 	"js":   [
+				"jquery-1.9.1.min.js",
+				"jquery-ui-1.10.2.custom.min.js",
+				"bootstrap.min.js",
+				"holder.js",
+				"prettify/prettify.js",
+				"jquery.tablesorter.min.js",
+				"jquery.flot.js",
+				"kinetic-v4.5.3.min.js",
+				"base64.js"
+ 			],
+
+ 	"less": [
+ 				"lesshat.less",
+ 				"fontfaces.less",
+ 				"variables.less",
+ 				"mixins.less",
+ 				"override.less",
+ 				"container.less",
+ 				"menu.less",
+ 				"navbar.less",
+ 				"buttons.less",
+ 				"pages.less",
+ 				"animations.less",
+ 				"dashboard.less",
+ 				"signin.less",
+ 				"widgets.less",
+ 				"widgets-smallnav.less",
+ 				"widgets-switch.less",
+ 				"widgets-social.less",
+ 				"widgets-player.less",
+ 				"responsive.less"
+ 			]
+}

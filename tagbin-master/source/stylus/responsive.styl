@@ -1,0 +1,47 @@
+@media (max-width:767px)
+	.menu
+		left 0
+		bottom initial
+		top 0
+		right 0
+		height 70px
+		ul	
+			margin-left 0px
+			white-space nowrap
+			overflow hidden
+			li
+				width auto
+				clearfix()
+				display block
+				float left
+				.condensed
+					padding-left 12px
+					padding-right 12px
+				&:hover
+					.expander
+						position relative
+						display block
+						float right
+						width auto
+						margin 0
+						left initial
+						right -15px
+						top -15px
+						box-shadow none
+						padding-top 26px
+					.condensed
+						position static
+						display block 
+						float left
+
+			li.active
+				position relative
+				&:after	
+					position absolute
+					bottom 0
+					content ''
+					border 8px transparent solid
+					border-bottom-color #FFF
+					left 50%
+					margin-left -8px
+					z-index 1200

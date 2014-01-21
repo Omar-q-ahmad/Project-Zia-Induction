@@ -1,0 +1,67 @@
+.videoWrap
+	width 640px
+	height 480px
+	position relative
+	overflow hidden
+	video#camera-vw, .countdown
+		absolute top left
+		width 640px
+		height 480px
+		z-index 55
+	.countdown
+		z-index 60
+		.c1,.c2,.c3,.c4,.c5, .flash
+			color #FFF
+			text-shadow 0px 3px 2px rgba(0,0,0,0.7)
+			font-size 300px
+			text-align center
+			absolute top left
+			width 640px
+			height 480px
+			box-sizing border-box
+			padding-top 225px
+			transition all .3s ease-out
+			opacity 0
+		.c1
+			z-index 61
+			animation cdowns 0.4s linear
+			animation-delay 3.9s
+		.c2
+			z-index 62
+			animation cdowns 0.4s linear
+			animation-delay 2.9s
+		.c3
+			z-index 63
+			animation cdowns 0.4s linear
+			animation-delay 1.9s
+		.c4
+			z-index 64
+			animation cdowns 0.4s linear
+			animation-delay 0.9s
+		.c5
+			z-index 65
+			animation cdowns 0.4s linear
+			animation-delay 0s
+		.flash 
+			z-index 66
+			background-color #FFF
+			opacity 0
+			animation flashIt 0.2s cubic-bezier(0, 0.95, 0.3, 0.96)
+			animation-delay 4.9s
+
+.videoWrap
+	position relative
+	&:after
+		absolute top left 
+		height inherit
+		width inherit
+		box-sizing border-box
+		margin 0
+		padding 0
+		z-index 58
+		opacity 0.5
+		content ''
+		background-size 100% 100%
+		background-position center center
+		background-repeat no-repeat
+		background-image url('../img/frame.png')

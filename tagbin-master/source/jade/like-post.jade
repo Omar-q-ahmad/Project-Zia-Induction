@@ -1,0 +1,90 @@
+.row-fluid.box.app
+	.title.purple
+		.heads.pull-left
+			i.icomoon-thumbs-up
+			h3 Like Posts
+		.options
+			button.btn.purple.runAction(data-action='prevPost')
+				i.entypo-arrow-up-6
+			button.btn.purple.runAction(data-action='nextPost')
+				i.entypo-arrow-down-7
+	//-.post-container.row-fluid.loadActions(data-action='getLatestPost', data-target='#latestpost')
+		.userImage.span3.user-whoposted
+			img
+		.post-content.span9#latestpost
+			.who-posted FB User
+			.post-text
+				p The actual post to be processed upon
+			.post-likes 
+				.count 3
+				.text people like this
+	.posts-list.loadActions(data-action='getLikePosts', data-target='.posts-list')
+
+		.social-post.row-fluid
+			.span3
+				.pic-whoposted
+			.span9
+				.who-posted Tushar Kant
+				.post-text
+					p Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet 
+						i.icomoon-happy
+				.post-likes
+					.count
+						i.icomoon-thumbs-up.purple 
+						| 3
+					.text people like this
+		.social-post.row-fluid.active
+			.span3
+				.pic-whoposted
+			.span9
+				.who-posted Tushar Kant
+				.post-text
+					p Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet 
+						i.icomoon-happy
+				.post-likes
+					.count
+						i.icomoon-thumbs-up.purple 
+						| 3
+					.text people like this
+		
+		.social-post.row-fluid
+			.span3
+				.pic-whoposted
+			.span9
+				.who-posted Tushar Kant
+				.post-text
+					p Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet 
+						i.icomoon-happy
+				.post-likes
+					.count
+						i.icomoon-thumbs-up.purple 
+						| 3
+					.text people like this
+
+		.social-post.row-fluid
+			.span3
+				.pic-whoposted
+			.span9
+				.who-posted Tushar Kant
+				.post-text
+					p Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet 
+						i.icomoon-happy
+				.post-likes
+					.count
+						i.icomoon-thumbs-up.purple 
+						| 3
+					.text people like this
+		
+		.social-post.row-fluid
+			.span3
+				.pic-whoposted
+			.span9
+				.who-posted Tushar Kant
+				.post-text
+					p Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet Lorem Ipsum dolor si amet 
+						i.icomoon-happy
+				.post-likes
+					.count
+						i.icomoon-thumbs-up.purple 
+						| 3
+					.text people like this

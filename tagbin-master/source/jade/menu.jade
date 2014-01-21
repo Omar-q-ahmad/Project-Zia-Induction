@@ -1,0 +1,40 @@
+mixin __menuContent()
+	.tagBinMain
+		i.icomoon-tagbin
+
+	ul
+		li.runAction(data-action='navigate', data-target='like-post.html')
+			.expander 
+				.title Like
+			.condensed
+				i.icomoon-thumbs-up
+		li.runAction(data-action='navigate', data-target='pic-upload.html')
+			.expander 
+				.title PicUpload
+			.condensed
+				i.icomoon-image
+		li.active.runAction(data-action='navigate', data-target='share.html')
+			.expander
+				.title Share
+			.condensed 
+				i.entypo-export
+		li.runAction(data-action='navigate', data-target='status-post.html')
+			.expander
+				.title Status Post
+			.condensed
+				i.entypo-vcard
+		li.runAction(data-action='navigate', data-target='tagplay.html')
+			.expander
+				.title tagPlay
+			.condensed
+				i.icomoon-music
+		
+
+mixin _menu( _state )
+	- if( _state == 'hidden' )
+		.menu(data-state='hidden')
+			mixin __menuContent()
+	- else if( _state == 'normal' )
+		.menu(data-state='normal')
+			mixin __menuContent()
+	- else "Error Initializing Menu"

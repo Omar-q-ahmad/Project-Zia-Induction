@@ -1,0 +1,66 @@
+extends layout
+
+block menu 
+	mixin _menu('normal')
+
+
+block overlay
+	.loading
+		.tb-loader
+			i.icomoon-tagbin.anim
+		.k-contain#canvasworld
+		ul.loader-menu.hide
+			li
+				a.btn-hex.purple(href='like-post.html')
+					i.icomoon-thumbs-up
+					.title Like
+			li
+				a.btn-hex.green(href='pic-upload.html')
+					i.icomoon-image
+					.title Pic-Upload
+			li
+				a.btn-hex.red(href='share.html')
+					i.entypo-export
+					.title Share
+			li
+				a.btn-hex.blue(href='status-post.html')
+					i.entypo-vcard
+					.title Status Post
+			li
+				a.btn-hex.magenta(href='tagplay.html')
+					i.icomoon-music
+					.title tagPlay
+
+
+block content
+
+	.row-fluid
+		.span3
+			.row-fluid.box.main
+				.title.tb.purple
+					i.icomoon-music
+					h3 tagPlay
+				.body.noBG
+
+				.footer.needy.animated
+			
+			.row-fluid.box.hide
+				.title.green
+					i.icomoon-lightning
+					h3 Actions
+				ul.actionlist.unstyled
+					li.action.done
+						i.icomoon-minus
+						span.name Access Machine
+					li.action.waiting
+						i.icomoon-minus
+						span.name Capture Pic
+					li.action
+						i.icomoon-minus
+						span.name Upload
+		.span9
+			.row-fluid.app-content
+				.row-fluid.box.app
+					.title.yellow
+						i.icomoon-stats
+						h3 Stats

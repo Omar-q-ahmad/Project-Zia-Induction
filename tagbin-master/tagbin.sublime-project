@@ -1,0 +1,83 @@
+{
+	"folders":
+	[
+		{
+			"path": "C:\\Users\\OMAR\\Desktop\\tagbin-master"
+			//"path": "E:\\Work\\Templates\\Tagbin"
+		}
+	],
+	"settings":
+	{
+		"tab_size": 4
+	},
+	"build_systems":
+    [
+        {
+			"name": "Tagbin",
+			"cmd": ["node $project_path\\make.js all"],
+			"file_regex": "^.+",
+			"shell": true,
+			"linux": {
+				"cmd": ["$project_path/make.js all"]
+			},
+			"variants": 
+			[
+				{ "cmd": ["node $project_path\\make.js tags"],
+				  "name": "Tagbin: Compile Tags",
+				  "shell":true,
+				  "linux":{
+				  	"cmd":["$project_path/make.js tags"]
+				  }
+				},
+				{ "cmd": ["node $project_path\\make.js coffee"],
+				  "name": "Tagbin: Compile Coffee",
+				  "shell":true,
+				  "linux":{
+				  	"cmd":["$project_path/make.js coffee"]
+				  }
+				},
+
+				{ "cmd": ["node $project_path\\make.js less"],
+				  "name": "Tagbin: Compile Less",
+				  "shell":true,
+				  "linux":{
+				  	"cmd":["$project_path/make.js less"]
+				  }
+				},
+
+				{ "cmd": ["node $project_path\\make.js stylus"],
+				  "name": "Tagbin: Compile Stylus",
+				  "shell":true,
+				  "linux":{
+				  	"cmd":["$project_path/make.js stylus"]
+				  }
+				},
+
+				{ "cmd": ["node $project_path\\make.js jade"],
+				  "name": "Tagbin: Compile Jade",
+				  "shell":true,
+				  "linux":{
+				  	"cmd":["$project_path/make.js jade"]
+				  }
+				},
+
+				{ "cmd": ["node $project_path\\make.js styles"],
+				  "name": "Tagbin: Compile Styles",
+				  "shell":true,
+				  "linux":{
+				  	"cmd":["$project_path/make.js styles"]
+				  }
+				},
+
+				{ "cmd": ["node $project_path\\make.js vendors"],
+				  "name": "Tagbin: Compile Vendors",
+				  "shell":true,
+				  "linux":{
+				  	"cmd":["$project_path/make.js vendors"]
+				  }
+				}
+
+			]
+        }
+    ]
+}

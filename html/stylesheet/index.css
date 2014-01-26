@@ -1,22 +1,50 @@
 body { 
 	background:url('../images/westmere_die.jpg');
-	background-size:100%;
 	background-attachment:fixed;
 	background-color:#cccccc;
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 	}
 #header { 
+	display:inline;
+	position:absolute;
 	font-style:normal;
 	font-weight:900;
 	font-family:Helvetica;
-	color:#FFFFE0;
+	color:#A60C16;
 	text-align:center;
+	margin-left: 250px;
+	margin-top:65px;
+	font-size:60px;
+	text-decoration:underline;
+	text-shadow:3px 3px #000000;
 	}
 #header_image {
-	display:block;
-	margin:30px;
-	border-radius:15px;
+	display:inline;
+	posotion:relative;
+	max-width:50%;
+	height:150px;
+	width:150px;
+	border-radius:50px;
 	color:black;
-	margin-left:auto;
+	margin-left:100px;
+	margin-top:20px;
 	margin-right:auto;
 	}
+#header_marquee {
+	display:block;
+	position:relative;
+	font-style:normal;
+	font-weight:900;
+	font-family:Helvetica;
+	color:#B0ABAB;
+	text-align:center;
+	margin-top:10px;
+	font-size:30px;
+	text-shadow:3px 3px #000000;
+	}
+
 	
